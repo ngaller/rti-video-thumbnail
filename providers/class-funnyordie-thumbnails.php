@@ -17,7 +17,7 @@
 */
 
 // Require thumbnail provider class
-require_once( VIDEO_THUMBNAILS_PATH . '/php/providers/class-video-thumbnails-provider.php' );
+require_once( RTI_VIDEO_THUMBNAIL_PATH . '/providers/class-video-thumbnails-provider.php' );
 
 class Funnyordie_Thumbnails extends Video_Thumbnails_Provider {
 

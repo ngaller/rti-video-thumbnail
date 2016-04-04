@@ -111,4 +111,3 @@ class Video_Thumbnails_Provider {
 
 }
 
-?>

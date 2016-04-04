@@ -17,28 +17,28 @@
 */
 
 // Include provider classes
-require_once( RTI_VIDEO_THUMBNAIL_PATH . '/php/providers/class-youtube-thumbnails.php' );
-require_once( RTI_VIDEO_THUMBNAIL_PATH . '/php/providers/class-vimeo-thumbnails.php' );
-require_once( RTI_VIDEO_THUMBNAIL_PATH . '/php/providers/class-facebook-thumbnails.php' );
-require_once( RTI_VIDEO_THUMBNAIL_PATH . '/php/providers/class-vine-thumbnails.php' );
-require_once( RTI_VIDEO_THUMBNAIL_PATH . '/php/providers/class-blip-thumbnails.php' );
-require_once( RTI_VIDEO_THUMBNAIL_PATH . '/php/providers/class-dailymotion-thumbnails.php' );
-require_once( RTI_VIDEO_THUMBNAIL_PATH . '/php/providers/class-metacafe-thumbnails.php' );
-require_once( RTI_VIDEO_THUMBNAIL_PATH . '/php/providers/class-vk-thumbnails.php' );
-require_once( RTI_VIDEO_THUMBNAIL_PATH . '/php/providers/class-funnyordie-thumbnails.php' );
-require_once( RTI_VIDEO_THUMBNAIL_PATH . '/php/providers/class-mpora-thumbnails.php' );
-require_once( RTI_VIDEO_THUMBNAIL_PATH . '/php/providers/class-wistia-thumbnails.php' );
-require_once( RTI_VIDEO_THUMBNAIL_PATH . '/php/providers/class-youku-thumbnails.php' );
-require_once( RTI_VIDEO_THUMBNAIL_PATH . '/php/providers/class-tudou-thumbnails.php' );
-require_once( RTI_VIDEO_THUMBNAIL_PATH . '/php/providers/class-collegehumor-thumbnails.php' );
-require_once( RTI_VIDEO_THUMBNAIL_PATH . '/php/providers/class-rutube-thumbnails.php' );
-require_once( RTI_VIDEO_THUMBNAIL_PATH . '/php/providers/class-sapo-thumbnails.php' );
-require_once( RTI_VIDEO_THUMBNAIL_PATH . '/php/providers/class-ted-thumbnails.php' );
-require_once( RTI_VIDEO_THUMBNAIL_PATH . '/php/providers/class-twitch-thumbnails.php' );
-require_once( RTI_VIDEO_THUMBNAIL_PATH . '/php/providers/class-googledrive-thumbnails.php' );
-require_once( RTI_VIDEO_THUMBNAIL_PATH . '/php/providers/class-yahooscreen-thumbnails.php' );
-require_once( RTI_VIDEO_THUMBNAIL_PATH . '/php/providers/class-livestream-thumbnails.php' );
-// require_once( RTI_VIDEO_THUMBNAIL_PATH . '/php/providers/class-kaltura-thumbnails.php' );
+require_once( RTI_VIDEO_THUMBNAIL_PATH . '/providers/class-youtube-thumbnails.php' );
+require_once( RTI_VIDEO_THUMBNAIL_PATH . '/providers/class-vimeo-thumbnails.php' );
+require_once( RTI_VIDEO_THUMBNAIL_PATH . '/providers/class-facebook-thumbnails.php' );
+require_once( RTI_VIDEO_THUMBNAIL_PATH . '/providers/class-vine-thumbnails.php' );
+require_once( RTI_VIDEO_THUMBNAIL_PATH . '/providers/class-blip-thumbnails.php' );
+require_once( RTI_VIDEO_THUMBNAIL_PATH . '/providers/class-dailymotion-thumbnails.php' );
+require_once( RTI_VIDEO_THUMBNAIL_PATH . '/providers/class-metacafe-thumbnails.php' );
+require_once( RTI_VIDEO_THUMBNAIL_PATH . '/providers/class-vk-thumbnails.php' );
+require_once( RTI_VIDEO_THUMBNAIL_PATH . '/providers/class-funnyordie-thumbnails.php' );
+require_once( RTI_VIDEO_THUMBNAIL_PATH . '/providers/class-mpora-thumbnails.php' );
+require_once( RTI_VIDEO_THUMBNAIL_PATH . '/providers/class-wistia-thumbnails.php' );
+require_once( RTI_VIDEO_THUMBNAIL_PATH . '/providers/class-youku-thumbnails.php' );
+require_once( RTI_VIDEO_THUMBNAIL_PATH . '/providers/class-tudou-thumbnails.php' );
+require_once( RTI_VIDEO_THUMBNAIL_PATH . '/providers/class-collegehumor-thumbnails.php' );
+require_once( RTI_VIDEO_THUMBNAIL_PATH . '/providers/class-rutube-thumbnails.php' );
+require_once( RTI_VIDEO_THUMBNAIL_PATH . '/providers/class-sapo-thumbnails.php' );
+require_once( RTI_VIDEO_THUMBNAIL_PATH . '/providers/class-ted-thumbnails.php' );
+require_once( RTI_VIDEO_THUMBNAIL_PATH . '/providers/class-twitch-thumbnails.php' );
+require_once( RTI_VIDEO_THUMBNAIL_PATH . '/providers/class-googledrive-thumbnails.php' );
+require_once( RTI_VIDEO_THUMBNAIL_PATH . '/providers/class-yahooscreen-thumbnails.php' );
+require_once( RTI_VIDEO_THUMBNAIL_PATH . '/providers/class-livestream-thumbnails.php' );
+// require_once( RTI_VIDEO_THUMBNAIL_PATH . '/providers/class-kaltura-thumbnails.php' );
 
 // Register providers
 add_filter( 'video_thumbnail_providers', array( 'Youtube_Thumbnails', 'register_provider' ) );
