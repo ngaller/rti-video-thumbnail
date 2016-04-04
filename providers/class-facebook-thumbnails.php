@@ -49,13 +49,15 @@ class Facebook_Thumbnails extends Video_Thumbnails_Provider {
 		} else {
 			$result = json_decode( $response['body'] );
 			$result = $result->data->url;
-			$high_res = str_replace( '_t.jpg', '_b.jpg', $result);
-			if ( $high_res != $result ) {
-				$response = wp_remote_head( $high_res );
-				if ( !is_wp_error( $response ) && $response['response']['code'] == '200' ) {
-					$result = $high_res;
-				}
-			}
+            // keep default resolution, don't look for hi res
+            return $result;
+			// $high_res = str_replace( '_t.jpg', '_b.jpg', $result);
+			// if ( $high_res != $result ) {
+			// 	$response = wp_remote_head( $high_res );
+			// 	if ( !is_wp_error( $response ) && $response['response']['code'] == '200' ) {
+			// 		$result = $high_res;
+			// 	}
+			// }
 		}
 		return $result;
 	}
